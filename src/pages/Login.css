@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../Imgs/star pattern (1).svg");
+    background-size: cover; 
+    background-position: center;
+    padding: 20px; 
+}
+
+.box {
+    background-color: rgba(0,0,0,0.6); 
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    width: 500px; 
+    height: 600px;
+    margin-top: 50px; 
+    height: auto;
+    font-family: Arial, sans-serif;  
+}
+
+.titleL {
+    color: #ffffff;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 1.75rem; 
+    font-family: inherit; 
+}
+
+.subtitle {
+    color: #999;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.signup-link {
+    color: #55a1ff;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: inherit;
+}
+
+.input {
+    background-color: #2a2a2e; 
+    border: none;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 25px; 
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.button {
+    background-color: rgb(0, 70, 87); 
+    border: none;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 50%; 
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 20px;
+    font-family: inherit;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    color: #999;
+    font-size: 0.9rem;
+    font-family: inherit;
+}
+
+.reset-link {
+    color: #55a1ff;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+
+@media (max-width: 768px) {
+    .box {
+        margin-top: 70px; 
+        padding: 30px; 
+    }
+
+    .title {
+        font-size: 1.5rem; 
+    }
+
+    .input, .button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        margin-top: 10px;
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .input, .button {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .forgot-password {
+        font-size: 0.8rem;
+    }
+}

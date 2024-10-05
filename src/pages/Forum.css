@@ -1,0 +1,109 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif; 
+}
+
+.forum-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: white;
+  padding: 20px;
+  position: relative;
+  transition: width 0.3s;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar h3 {
+  color: #ffcc00; 
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar li:hover {
+  background-color: rgba(255, 255, 255, 0.2); 
+}
+
+.sidebar li.active {
+  background-color: rgba(255, 204, 0, 0.5); 
+}
+
+.chat-section {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(30, 30, 30, 0.9); 
+  color: white;
+  border-left: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.joinChatContainer {
+  width: 100%;
+  max-width: 400px; 
+  background-color: rgba(255, 255, 255, 0.1); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px); 
+}
+
+.joinChatContainer h3 {
+  text-align: center;
+  color: #ffcc00;
+}
+
+.joinChatContainer input {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white; 
+  transition: background-color 0.3s; 
+}
+
+.joinChatContainer input::placeholder {
+  color: rgba(255, 255, 255, 0.7); 
+}
+
+.joinChatContainer input:hover,
+.joinChatContainer input:focus {
+  background-color: rgba(255, 255, 255, 0.3); 
+}
+
+.joinChatContainer button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffcc00;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.joinChatContainer button:hover {
+  background-color: rgba(255, 204, 0, 0.8); 
+}
+
+.joinChatContainer button + button {
+  margin-top: 10px;
+}
